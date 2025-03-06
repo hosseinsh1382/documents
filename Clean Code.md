@@ -51,9 +51,11 @@ melCase.
 
 
 
-## Naming
 
-### 1. Intention-Revealing names
+
+### Naming
+
+#### 1. Intention-Revealing names
 
 No need to comment for responsibility
 
@@ -61,3 +63,43 @@ No need to comment for responsibility
 - int elapsedTimeInDays;
 - int daysSinceCreation;
 
+```java
+public List<int[]> getThem() {
+ List<int[]> list1 = new ArrayList<int[]>();
+ for (int[] x : theList)
+    if (x[0] == 4)
+        list1.add(x);
+ return list1;
+ }
+ ```
+
+ ```java
+ public List<int[]> getFlaggedCells() {
+    List<int[]> flaggedCells = new ArrayList<int[]>();
+    for (int[] cell : gameBoard)
+        if (cell[STATUS_VALUE] == FLAGGED)
+        flaggedCells.add(cell);
+    return flaggedCells;
+ }
+ ```
+
+
+ #### 2. Pronounceable names
+
+ If you can’t pronounce it, you can’t discuss it without sounding like an idiot. So make your names pronounceable!
+
+ - arr
+ - tbl
+ - class DtaRcrd102
+
+
+#### 3. Similarity
+
+Pick one word for one abstract concept and stick with it.
+Avoid using the same word for two purposes.
+
+- fetch()
+- retrieve()
+- get()
+
+- add()
