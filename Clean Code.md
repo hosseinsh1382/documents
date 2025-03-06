@@ -42,7 +42,22 @@ Methods should be **verbs** and write in **camelCase**.
 
 Variable names should be short yet meaningful and should not start with underscore _ or dollar sign $ characters
 One-character variable names should be avoided except for temporary "throwaway" variables. Common names for temporary variables are i, j, k, m, and n for integers; c, d, and e for characters.
-variables should be written in camelCase.
+variables should be written in caint daysSinceCreation;
+melCase.
 
 - int i;
 - string inputText;
+
+
+
+
+## Naming
+
+### 1. Intention-Revealing names
+
+No need to comment for responsibility
+
+- int d; // elapsed time in days (WRONG)
+- int elapsedTimeInDays;
+- int daysSinceCreation;
+
